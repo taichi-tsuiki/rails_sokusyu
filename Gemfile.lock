@@ -88,14 +88,24 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    dartsass-ruby (3.0.2)
+      sass-embedded (~> 1.54, < 1.67)
+    dartsass-sprockets (3.0.0)
+      dartsass-ruby (~> 3.0)
+      railties (>= 4.0.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
     execjs (2.9.1)
+    ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    google-protobuf (3.25.0-x86_64-darwin)
     hpricot (0.8.6)
     html2slim (0.2.0)
       hpricot
@@ -185,6 +195,16 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     rubyzip (2.3.2)
+    sass-embedded (1.66.1-x86_64-darwin)
+      google-protobuf (~> 3.23)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.15.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -236,6 +256,7 @@ DEPENDENCIES
   bootsnap
   bootstrap
   capybara
+  dartsass-sprockets
   debug
   html2slim
   importmap-rails
@@ -243,6 +264,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.8)
+  sassc-rails
   selenium-webdriver
   slim-rails
   sprockets-rails
