@@ -33,7 +33,6 @@ class TasksController < ApplicationController
   def destroy
     task = Task.find(params[:id])
     task.destroy
-    # destroyはうまくいかないのでいったん保留して次に進む
     redirect_to tasks_url, notice: "タスク「#{task.name}」を削除しました。"
   end
 
